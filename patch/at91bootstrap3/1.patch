@@ -1,0 +1,13 @@
+diff --git a/Config.in.u-boot b/Config.in.u-boot
+index a5f2649..4c70436 100644
+--- a/Config.in.u-boot
++++ b/Config.in.u-boot
+@@ -5,7 +5,7 @@ config CONFIG_IMG_ADDRESS
+ 	string "Flash Offset for U-Boot"
+ 	depends on CONFIG_DATAFLASH || CONFIG_FLASH || CONFIG_NANDFLASH
+ 	default "0x00008000" if CONFIG_FLASH
+-	default "0x00008000" if CONFIG_DATAFLASH
++	default "0x00008400" if CONFIG_DATAFLASH
+ 	default "0x00040000" if CONFIG_NANDFLASH
+ 	default	"0x00000000" if CONFIG_SDCARD
+ 	help
